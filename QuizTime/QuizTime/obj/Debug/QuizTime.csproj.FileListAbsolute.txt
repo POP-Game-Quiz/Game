@@ -1,0 +1,10 @@
+C:\SoftwareEngineering\QuizTime\QuizTime\bin\Debug\QuizTime.exe.config
+C:\SoftwareEngineering\QuizTime\QuizTime\bin\Debug\QuizTime.exe
+C:\SoftwareEngineering\QuizTime\QuizTime\bin\Debug\QuizTime.pdb
+C:\SoftwareEngineering\QuizTime\QuizTime\obj\Debug\QuizTime.csproj.AssemblyReference.cache
+C:\SoftwareEngineering\QuizTime\QuizTime\obj\Debug\QuizTime.Form1.resources
+C:\SoftwareEngineering\QuizTime\QuizTime\obj\Debug\QuizTime.Properties.Resources.resources
+C:\SoftwareEngineering\QuizTime\QuizTime\obj\Debug\QuizTime.csproj.GenerateResource.cache
+C:\SoftwareEngineering\QuizTime\QuizTime\obj\Debug\QuizTime.csproj.CoreCompileInputs.cache
+C:\SoftwareEngineering\QuizTime\QuizTime\obj\Debug\QuizTime.exe
+C:\SoftwareEngineering\QuizTime\QuizTime\obj\Debug\QuizTime.pdb
