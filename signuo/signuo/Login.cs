@@ -16,42 +16,44 @@ namespace signuo
         public Login()
         {
             InitializeComponent();
-            ConfirmPasswordLabel.Hide();
-            ConfirmPasswordInput.Hide();
-            SubmitButton.Hide();
+            label3.Hide();
+            textBox3.Hide();
+            button1.Hide();
         }
-        private void SignUpButton_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            ConfirmPasswordLabel.Show();
-            ConfirmPasswordInput.Show();
-            SubmitButton.Show();
-            SignUpButton.Hide();
+            label3.Show();
+            textBox3.Show();
+            button1.Show();
+            button3.Hide();
         }
-        private void Submit(object sender, EventArgs e)
+        private void submit(object sender, EventArgs e)
         {
            
-            if (ConfirmPasswordInput.Text == PasswordInput.Text)
+            if (textBox3.Text == textBox2.Text)
             {
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\bestk\Documents\University\CCCU\Year 2\Software Engineering\Game - main\Game - main\signuo\signuo\Database1.mdf;Integrated Security=True");
-                SqlCommand cmdins = new SqlCommand(@"insert into [dbo].[signup] ([user],[pass]) values ('" + UserNameInput.Text + "','" + PasswordInput.Text + "')", sqlcon);
+                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\PubQuiz\Game-main\signuo\signuo\Database1.mdf;Integrated Security=True");
+                SqlCommand cmdins = new SqlCommand(@"insert into [dbo].[signup] ([user],[pass]) values ('" + textBox1.Text + "','" + textBox2.Text + "')", sqlcon);
 
                 sqlcon.Open();
                 cmdins.ExecuteNonQuery();
                 sqlcon.Close();
 
-                MessageBox.Show("You Successfully Created an Account.");
+                MessageBox.Show("added");
             }
             else
             {
-                MessageBox.Show("You Have Entered Passwords That Do Not Match, Please Try Again.");
+                MessageBox.Show("the passowrd dosen`t match");
             }
 
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
+       
+        //login
+        private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C: \Users\bestk\Documents\University\CCCU\Year 2\Software Engineering\Game - main\Game - main\signuo\signuo\Database1.mdf;Integrated Security=True");
-            SqlDataAdapter adap = new SqlDataAdapter(@"select count (*) from [dbo].[signup] where [dbo].[signup].[user] ='" + UserNameInput.Text + "' and [dbo].[signup].[pass] ='" + PasswordInput.Text + "'", sqlcon);
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\PubQuiz\Game-main\signuo\signuo\Database1.mdf;Integrated Security=True");
+            SqlDataAdapter adap = new SqlDataAdapter(@"select count (*) from [dbo].[signup] where [dbo].[signup].[user] ='" + textBox1.Text + "' and [dbo].[signup].[pass] ='" + textBox2.Text + "'", sqlcon);
 
             //creates table and adds data
             DataTable dt = new DataTable();
@@ -68,7 +70,7 @@ namespace signuo
             }
             else
             {
-                MessageBox.Show("Incorrect Password, Please Try Again","ALERT" , MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("please try again","alert" , MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
