@@ -15,6 +15,7 @@ namespace signuo
     {
         //sql connection
         //if the conn string dosent work you need to copy paste your string into sql conn
+        //test
         
         public SqlConnection conn = new SqlConnection
             (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\source\repos\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
