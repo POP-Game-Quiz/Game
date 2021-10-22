@@ -12,12 +12,14 @@ namespace signuo
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] Args)
         {
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Login.AllConnection = Args[0];
             Application.Run(new Login());
+
         }
     }
 }

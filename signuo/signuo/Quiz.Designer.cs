@@ -33,16 +33,17 @@ namespace signuo
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.QuestionLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.NextBtn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.ScoreLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(253, 168);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(117, 24);
             this.radioButton1.TabIndex = 0;
@@ -85,12 +86,12 @@ namespace signuo
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(253, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Question";
+            this.QuestionLabel.AutoSize = true;
+            this.QuestionLabel.Location = new System.Drawing.Point(253, 63);
+            this.QuestionLabel.Name = "label1";
+            this.QuestionLabel.Size = new System.Drawing.Size(68, 20);
+            this.QuestionLabel.TabIndex = 4;
+            this.QuestionLabel.Text = "Question";
             // 
             // button1
             // 
@@ -112,26 +113,26 @@ namespace signuo
             this.NextBtn.TabIndex = 6;
             this.NextBtn.Text = "Next";
             this.NextBtn.UseVisualStyleBackColor = true;
-            this.NextBtn.Click += new System.EventHandler(this.NextBt);
+            this.NextBtn.Click += new System.EventHandler(this.NextButton);
             // 
-            // label2
+            // ScoreLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(662, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "score";
+            this.ScoreLabel.AutoSize = true;
+            this.ScoreLabel.Location = new System.Drawing.Point(662, 154);
+            this.ScoreLabel.Name = "ScoreLabel";
+            this.ScoreLabel.Size = new System.Drawing.Size(44, 20);
+            this.ScoreLabel.TabIndex = 7;
+            this.ScoreLabel.Text = "score";
             // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.QuestionLabel);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -150,9 +151,9 @@ namespace signuo
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label QuestionLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button NextBtn;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label ScoreLabel;
     }
 }
