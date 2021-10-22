@@ -15,10 +15,9 @@ namespace signuo
     {
         private int j=1;
         private int score = 0;
-        string[] answ;
-
-        public SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\source\repos\signuo\signuo\Database1.mdf;Integrated Security=True");
        
+
+        public SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\source\repos\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
         public Quiz()
         {
             InitializeComponent();
@@ -29,7 +28,6 @@ namespace signuo
        
         private void SubmitBt(object sender, EventArgs e)
         {
-            // randomise radiobutons, doing so randomises the answer
             if (radioButton1.Checked)
             {
                
@@ -37,21 +35,21 @@ namespace signuo
                 DataTable dt = new DataTable();
                 adap.Fill(dt);
                
-                MessageBox.Show("correct");
+                MessageBox.Show("Correct Answer");
                
-                //sc
+                //score
                 score++;
-                label2.Text = score.ToString();
+                ScoreLabel.Text = score.ToString();
 
             }
             else
             {
-                MessageBox.Show("fail", "alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Wrong Answer", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
 
-        private void NextBt(object sender, EventArgs e)
+        private void NextButton(object sender, EventArgs e)
         {
             //increments j where j is the row number of the table 
             j++;
@@ -71,12 +69,26 @@ namespace signuo
                 {
                     while (read.Read())
                     {
-                     //  [radioButton1, radioButton2, radioButton3, radioButton4];
-                            label1.Text       = (read["question"].ToString());
-                            radioButton1.Text = (read["cAnswer"].ToString());
-                            radioButton2.Text = (read["wAnswer"].ToString());
-                            radioButton3.Text = (read["wrAnswer"].ToString());
-                            radioButton4.Text = (read["wroAnswer"].ToString());
+                       
+                        label1.Text = (read["question"].ToString());
+
+                        string first  = (read["cAnswer"].ToString());
+                        string sec  = (read["wAnswer"].ToString());
+                        string tr = (read["wrAnswer"].ToString());
+                        string force = (read["wroAnswer"].ToString());
+
+                        List<string> populateAns = new List<string>()
+                                                           { first,
+                                                             sec,
+                                                             tr,
+                                                             force
+                                                           };
+                        int hh = new Random().Next(populateAns.Count);
+
+                        radioButton1.Text = populateAns[hh];
+                        radioButton2.Text = populateAns[hh];
+                        radioButton3.Text = populateAns[hh];
+                        radioButton4.Text = populateAns[hh];
                     }
                 }
             }
@@ -84,6 +96,16 @@ namespace signuo
             {
                 conn.Close();
             }
+        }
+        private void Score()
+        {
+
+            /* SqlCommand cmdScore = new SqlCommand(@"update score set score=max(score,@score) where user='" + User + "', conn);
+
+            cmdScore.Parameters.AddWithValue("@score", score);
+            conn.Open();
+                        int result = cmdScore.ExecuteNonQuery();
+            conn.Close();*/
         }
     }
 }
