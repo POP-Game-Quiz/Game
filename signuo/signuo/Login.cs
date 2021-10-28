@@ -1,25 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+
 
 namespace signuo
 {
     public partial class Login : Form
     {
-      public static string AllConnection = "" ;
+     
         //sql connection
-        //if the conn string dosent work you need to copy paste your string into sql conn
-        
-        public SqlConnection conn = new SqlConnection
-            (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+AllConnection+";Integrated Security=True");
-        public Login()
+        //if the conn string dosent work 
+        // to find this, double click database1 and in the properies of the database copy conn string, paste it into the variable 
+        public static SqlConnection conn = new SqlConnection
+        (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
+
+        public static string User;
+         public Login()
         {
             InitializeComponent();
             ConfirmPasswordLabel.Hide();
@@ -37,10 +34,10 @@ namespace signuo
         { 
             if (ConfirmPasswordTextbox.Text == PasswordTextBox.Text)
             {
-                SqlCommand cmdins = new SqlCommand(@"insert into [dbo].[signup] ([user],[pass]) values ('" + UserNameTextBox.Text + "','" + PasswordTextBox.Text + "')", conn);
+                SqlCommand cmd = new SqlCommand(@"insert into [dbo].[signup] ([user],[pass]) values ('" + UserNameTextBox.Text + "','" + PasswordTextBox.Text + "')", conn);
 
                 conn.Open();
-                cmdins.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 conn.Close();
 
                 MessageBox.Show("Account Created");
@@ -63,6 +60,8 @@ namespace signuo
           
             if (dt.Rows[0][0].ToString() == "1" )
             {
+                User = UserNameTextBox.Text;
+
                 //if logged in, hides this window and 
                 this.Hide();
 
