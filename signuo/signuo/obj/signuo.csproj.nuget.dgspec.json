@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj": {}
+    "C:\\Users\\bestk\\Source\\Repos\\Game\\signuo\\signuo\\signuo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj": {
+    "C:\\Users\\bestk\\Source\\Repos\\Game\\signuo\\signuo\\signuo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj",
+        "projectUniqueName": "C:\\Users\\bestk\\Source\\Repos\\Game\\signuo\\signuo\\signuo.csproj",
         "projectName": "signuo",
-        "projectPath": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj",
+        "projectPath": "C:\\Users\\bestk\\Source\\Repos\\Game\\signuo\\signuo\\signuo.csproj",
         "packagesPath": "C:\\Users\\bestk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\obj\\",
+        "outputPath": "C:\\Users\\bestk\\Source\\Repos\\Game\\signuo\\signuo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bestk\\AppData\\Roaming\\NuGet\\NuGet.Config",
