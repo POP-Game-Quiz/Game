@@ -15,7 +15,7 @@ namespace signuo
     {
         private int j=1;
         private int score = 0;
-       
+        private bool AnswerButton1Clicked = false;
 
         public SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\source\repos\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
         public Quiz()
@@ -28,10 +28,10 @@ namespace signuo
        
         private void SubmitBt(object sender, EventArgs e)
         {
-            if (radioButton1.Checked)
+            if (AnswerButton1Clicked == true)
             {
                
-                SqlDataAdapter adap = new SqlDataAdapter(@"select count (cAnswer) from [dbo].[Quest] where [dbo].[Quest].[cAnswer] ='" + radioButton1.Checked + "'", conn);
+                SqlDataAdapter adap = new SqlDataAdapter(@"select count (cAnswer) from [dbo].[Quest] where [dbo].[Quest].[cAnswer] ='" + AnswerButton1 + "'", conn);
                 DataTable dt = new DataTable();
                 adap.Fill(dt);
                
@@ -73,22 +73,22 @@ namespace signuo
                         label1.Text = (read["question"].ToString());
 
                         string first  = (read["cAnswer"].ToString());
-                        string sec  = (read["wAnswer"].ToString());
-                        string tr = (read["wrAnswer"].ToString());
-                        string force = (read["wroAnswer"].ToString());
+                        string second  = (read["wAnswer"].ToString());
+                        string third = (read["wrAnswer"].ToString());
+                        string fourth = (read["wroAnswer"].ToString());
 
                         List<string> populateAns = new List<string>()
                                                            { first,
-                                                             sec,
-                                                             tr,
-                                                             force
+                                                             second,
+                                                             third,
+                                                             fourth
                                                            };
                         int hh = new Random().Next(populateAns.Count);
 
-                        radioButton1.Text = populateAns[hh];
-                        radioButton2.Text = populateAns[hh];
-                        radioButton3.Text = populateAns[hh];
-                        radioButton4.Text = populateAns[hh];
+                        AnswerButton1.Text = populateAns[hh];
+                        AnswerButton2.Text = populateAns[hh];
+                        AnswerButton3.Text = populateAns[hh];
+                        AnswerButton4.Text = populateAns[hh];
                     }
                 }
             }
@@ -106,6 +106,11 @@ namespace signuo
             conn.Open();
                         int result = cmdScore.ExecuteNonQuery();
             conn.Close();*/
+        }
+
+        private void AnswerButton1_Click(object sender, EventArgs e)
+        {
+            AnswerButton1Clicked = true;
         }
     }
 }

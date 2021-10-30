@@ -454,24 +454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\reemk\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\bestk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\quizAgain\\signuo\\signuo\\signuo.csproj",
+      "projectUniqueName": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj",
       "projectName": "signuo",
-      "projectPath": "C:\\quizAgain\\signuo\\signuo\\signuo.csproj",
-      "packagesPath": "C:\\Users\\reemk\\.nuget\\packages\\",
-      "outputPath": "C:\\quizAgain\\signuo\\signuo\\obj\\",
+      "projectPath": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj",
+      "packagesPath": "C:\\Users\\bestk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\reemk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\bestk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -520,7 +515,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
