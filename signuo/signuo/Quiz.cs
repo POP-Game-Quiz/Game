@@ -152,5 +152,15 @@ namespace signuo
                 conn.Close();
             }
         }
+        private void Score()
+        {
+
+            /* SqlCommand cmdScore = new SqlCommand(@"update score set score=max(score,@score) where user='" + User + "', conn);
+
+            cmdScore.Parameters.AddWithValue("@score", score);
+            conn.Open();
+                        int result = cmdScore.ExecuteNonQuery();
+            conn.Close();*/
+        }
     }
 }
