@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -14,11 +8,12 @@ namespace signuo
     public partial class Login : Form
     {
         //sql connection
-        //if the conn string dosent work you need to copy paste your string into sql conn
-        //test
-        
-        public SqlConnection conn = new SqlConnection
-            (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\source\repos\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
+        //if the conn string dosent work 
+        // to find this, double click database1 and in the properies of the database copy conn string, paste it into the variable 
+        public static SqlConnection conn = new SqlConnection
+        (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
+
+        public static string User;
         public Login()
         {
             InitializeComponent();
@@ -26,6 +21,7 @@ namespace signuo
             ConfirmPasswordTextbox.Hide();
             SubmitButton1.Hide();
         }
+
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             ConfirmPasswordLabel.Show();
@@ -35,13 +31,12 @@ namespace signuo
         }
         private void Submit(object sender, EventArgs e)
         {
-           
-            if (ConfirmPasswordTextbox.Text == textBox2.Text)
+            if (ConfirmPasswordTextbox.Text == PasswordTextBox.Text)
             {
-                SqlCommand cmdins = new SqlCommand(@"insert into [dbo].[signup] ([user],[pass]) values ('" + textBox1.Text + "','" + textBox2.Text + "')", conn);
+                SqlCommand cmd = new SqlCommand(@"insert into [dbo].[signup] ([user],[pass]) values ('" + UserNameTextBox.Text + "','" + PasswordTextBox.Text + "')", conn);
 
                 conn.Open();
-                cmdins.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 conn.Close();
 
                 MessageBox.Show("Account Created");
@@ -50,35 +45,35 @@ namespace signuo
             {
                 MessageBox.Show("Please re-enter the password, they do not match");
             }
-
         }
 
-       
+
         //login
         private void LoginButton(object sender, EventArgs e)
         {
-  
-            SqlDataAdapter adap = new SqlDataAdapter(@"select count (*) from [dbo].[signup] where [dbo].[signup].[user] ='" + textBox1.Text + "' and [dbo].[signup].[pass] ='" + textBox2.Text + "'", conn);
+
+            SqlDataAdapter adap = new SqlDataAdapter(@"select count (*) from [dbo].[signup] where [dbo].[signup].[user] ='" + UserNameTextBox.Text + "' and [dbo].[signup].[pass] ='" + PasswordTextBox.Text + "'", conn);
 
             //creates table and adds data
             DataTable dt = new DataTable();
             adap.Fill(dt);
-          
 
-            if (dt.Rows[0][0].ToString() == "1" )
+            if (dt.Rows[0][0].ToString() == "1")
             {
+                User = UserNameTextBox.Text;
+
                 //if logged in, hides this window and 
                 this.Hide();
+
                 //shows the quizz app/window
                 Quiz QuizForm = new Quiz();
                 QuizForm.Show();
             }
             else
             {
-                MessageBox.Show("Please try again","Alert" , MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Please try again", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        
     }
+
 }

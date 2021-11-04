@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj",
+      "projectUniqueName": "C:\\Users\\bestk\\source\\Game-main\\Game-main\\signuo\\signuo\\signuo.csproj",
       "projectName": "signuo",
-      "projectPath": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\signuo.csproj",
+      "projectPath": "C:\\Users\\bestk\\source\\Game-main\\Game-main\\signuo\\signuo\\signuo.csproj",
       "packagesPath": "C:\\Users\\bestk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bestk\\source\\repos\\Game\\signuo\\signuo\\obj\\",
+      "outputPath": "C:\\Users\\bestk\\source\\Game-main\\Game-main\\signuo\\signuo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bestk\\AppData\\Roaming\\NuGet\\NuGet.Config",

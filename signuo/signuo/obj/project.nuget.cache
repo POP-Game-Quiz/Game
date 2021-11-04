@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D6eNiz7ykfdgKWR91kdy4Aovq2JLgBN9coWAW6z3JsHUVHK6gyCCePDnSIVJVTLmKIJqx1if+59pOn8eJV1I5g==",
+  "dgSpecHash": "LO2optJ4u2Y4jMzeOWgGSIm/x91/gnCf5vOOAlaRm+yknHbyHJsN/RRmYOQtqw9xPPtPA+hcTZHAreBy8boEgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bestk\\Source\\Repos\\Game\\signuo\\signuo\\signuo.csproj",
+  "projectFilePath": "C:\\Users\\bestk\\source\\Game-main\\Game-main\\signuo\\signuo\\signuo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bestk\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\bestk\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

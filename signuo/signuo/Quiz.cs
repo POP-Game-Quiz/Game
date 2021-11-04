@@ -1,52 +1,67 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static signuo.Login;
 
 namespace signuo
 {
     public partial class Quiz : Form
     {
-        private int j=1;
-        private int score = 0;
-        private bool AnswerButton1Clicked = false;
+        private int j = 1;
+        //  private int scoree;
+        private string userAnswer;
+        private string correctAnswer;
 
-        public SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\source\repos\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
+        private static List<AnswerButton> AnswerBtn = new List<AnswerButton>();
+
         public Quiz()
         {
             InitializeComponent();
-            //initializes the first question str8 away
+            //initializes the first question straight away
+
+            AnswerBtn = new List<AnswerButton>()
+                        {
+                            answerButton1,
+                            answerButton2,
+                            answerButton3,
+                            answerButton4
+                        };
+            //bring up the first question
             QuizzFill(j);
-            
+            //initial display the score to label from database
+            GetScore();
+
         }
-       
+
         private void SubmitBt(object sender, EventArgs e)
         {
-            if (AnswerButton1Clicked == true)
-            {
-               
-                SqlDataAdapter adap = new SqlDataAdapter(@"select count (cAnswer) from [dbo].[Quest] where [dbo].[Quest].[cAnswer] ='" + AnswerButton1 + "'", conn);
-                DataTable dt = new DataTable();
-                adap.Fill(dt);
-               
-                MessageBox.Show("Correct Answer");
-               
-                //score
-                score++;
-                ScoreLabel.Text = score.ToString();
 
+            foreach (AnswerButton aBtn in AnswerBtn)
+            {
+                if (aBtn.Checked)
+                {
+                    //sets userAnswer to the selected radiobutton
+                    userAnswer = aBtn.Text;
+                    break;
+                }
+            };
+
+            if (userAnswer == correctAnswer)
+            {
+                // idealy we wont use message boxes
+                MessageBox.Show("Correct answer");
+
+                //increments score by 1 
+                // updates old score + new score every "submit" click
+                Score();
             }
             else
             {
-                MessageBox.Show("Wrong Answer", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Incorrect Answer");
             }
-            
+            //display the score to the label from database
+            GetScore();
         }
 
         private void NextButton(object sender, EventArgs e)
@@ -99,18 +114,36 @@ namespace signuo
         }
         private void Score()
         {
-
-            /* SqlCommand cmdScore = new SqlCommand(@"update score set score=max(score,@score) where user='" + User + "', conn);
-
-            cmdScore.Parameters.AddWithValue("@score", score);
             conn.Open();
-                        int result = cmdScore.ExecuteNonQuery();
-            conn.Close();*/
+
+            SqlCommand cmdScore = new SqlCommand(@"UPDATE [dbo].[signup] SET [dbo].[signup].[score] =[score]+(1) WHERE [dbo].[signup].[user] in (@usr)", conn);
+
+            cmdScore.Parameters.AddWithValue("@usr", User);
+
+            cmdScore.ExecuteNonQuery();
+            conn.Close();
         }
 
-        private void AnswerButton1_Click(object sender, EventArgs e)
+        private void GetScore()
         {
-            AnswerButton1Clicked = true;
+            SqlCommand cmd = new SqlCommand(@"select (score) from [dbo].[signup] where  [dbo].[signup].[user] in (@usr)", conn);
+            cmd.Parameters.AddWithValue("@usr", User);
+            try
+            {
+                conn.Open();
+                using (SqlDataReader read = cmd.ExecuteReader())
+                {
+                    while (read.Read())
+                    {
+                        ScoreLabel.Text = (read["score"].ToString());
+                    }
+                }
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
+
     }
 }

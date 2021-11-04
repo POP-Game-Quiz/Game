@@ -92,7 +92,6 @@ namespace signuo
             this.AnswerButton1.TabIndex = 8;
             this.AnswerButton1.Text = "Answer1";
             this.AnswerButton1.UseVisualStyleBackColor = true;
-            this.AnswerButton1.Click += new System.EventHandler(this.AnswerButton1_Click);
             // 
             // AnswerButton2
             // 

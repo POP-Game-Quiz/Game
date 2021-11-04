@@ -30,8 +30,8 @@ namespace signuo
         private void InitializeComponent()
         {
             this.SubmitButton1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.UserNameTextBox = new System.Windows.Forms.TextBox();
+            this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,40 +48,36 @@ namespace signuo
             // SubmitButton1
             // 
             this.SubmitButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SubmitButton1.Location = new System.Drawing.Point(332, 233);
-            this.SubmitButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SubmitButton1.Location = new System.Drawing.Point(379, 311);
             this.SubmitButton1.Name = "SubmitButton1";
-            this.SubmitButton1.Size = new System.Drawing.Size(82, 32);
+            this.SubmitButton1.Size = new System.Drawing.Size(94, 43);
             this.SubmitButton1.TabIndex = 0;
             this.SubmitButton1.Text = "Submit";
             this.SubmitButton1.UseVisualStyleBackColor = true;
             this.SubmitButton1.Click += new System.EventHandler(this.Submit);
             // 
-            // textBox1
+            // UserNameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(307, 107);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 23);
-            this.textBox1.TabIndex = 1;
+            this.UserNameTextBox.Location = new System.Drawing.Point(351, 143);
+            this.UserNameTextBox.Name = "UserNameTextBox";
+            this.UserNameTextBox.Size = new System.Drawing.Size(265, 27);
+            this.UserNameTextBox.TabIndex = 1;
             // 
-            // textBox2
+            // PasswordTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(307, 141);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(232, 23);
-            this.textBox2.TabIndex = 2;
+            this.PasswordTextBox.Location = new System.Drawing.Point(351, 188);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '*';
+            this.PasswordTextBox.Size = new System.Drawing.Size(265, 27);
+            this.PasswordTextBox.TabIndex = 2;
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(332, 175);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(379, 233);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 28);
+            this.button2.Size = new System.Drawing.Size(94, 37);
             this.button2.TabIndex = 3;
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = true;
@@ -89,36 +85,35 @@ namespace signuo
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(164, 107);
+            this.label1.Location = new System.Drawing.Point(187, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 23);
+            this.label1.Size = new System.Drawing.Size(131, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Username";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(164, 141);
+            this.label2.Location = new System.Drawing.Point(187, 188);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 23);
+            this.label2.Size = new System.Drawing.Size(131, 31);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ConfirmPasswordTextbox
             // 
-            this.ConfirmPasswordTextbox.Location = new System.Drawing.Point(307, 175);
-            this.ConfirmPasswordTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ConfirmPasswordTextbox.Location = new System.Drawing.Point(351, 233);
             this.ConfirmPasswordTextbox.Name = "ConfirmPasswordTextbox";
             this.ConfirmPasswordTextbox.PasswordChar = '*';
-            this.ConfirmPasswordTextbox.Size = new System.Drawing.Size(232, 23);
+            this.ConfirmPasswordTextbox.Size = new System.Drawing.Size(265, 27);
             this.ConfirmPasswordTextbox.TabIndex = 6;
             // 
             // ConfirmPasswordLabel
             // 
-            this.ConfirmPasswordLabel.Location = new System.Drawing.Point(164, 175);
+            this.ConfirmPasswordLabel.Location = new System.Drawing.Point(187, 233);
             this.ConfirmPasswordLabel.Name = "ConfirmPasswordLabel";
-            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(115, 22);
+            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(131, 29);
             this.ConfirmPasswordLabel.TabIndex = 7;
             this.ConfirmPasswordLabel.Text = "Confirm Password";
             this.ConfirmPasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -127,10 +122,9 @@ namespace signuo
             // 
             this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SignUpButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SignUpButton.Location = new System.Drawing.Point(316, 278);
-            this.SignUpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SignUpButton.Location = new System.Drawing.Point(361, 371);
             this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(117, 32);
+            this.SignUpButton.Size = new System.Drawing.Size(134, 43);
             this.SignUpButton.TabIndex = 8;
             this.SignUpButton.Text = "Sign Up";
             this.SignUpButton.UseVisualStyleBackColor = true;
@@ -141,9 +135,10 @@ namespace signuo
             this.textBox3.BackColor = System.Drawing.SystemColors.InfoText;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox3.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox3.Location = new System.Drawing.Point(29, 28);
+            this.textBox3.Location = new System.Drawing.Point(33, 37);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(643, 71);
+            this.textBox3.Size = new System.Drawing.Size(734, 87);
             this.textBox3.TabIndex = 15;
             this.textBox3.Text = "IT\'S QUIZ TIME!!";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -151,35 +146,36 @@ namespace signuo
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(676, 314);
+            this.pictureBox1.Size = new System.Drawing.Size(773, 419);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(307, 221);
+            this.label3.Location = new System.Drawing.Point(351, 295);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 22);
+            this.label3.Size = new System.Drawing.Size(166, 29);
             this.label3.TabIndex = 16;
             this.label3.Text = "Don\'t have an account?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(307, 243);
+            this.label4.Location = new System.Drawing.Point(351, 324);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 22);
+            this.label4.Size = new System.Drawing.Size(166, 29);
             this.label4.TabIndex = 17;
             this.label4.Text = "Click \'Sign Up\' below";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 338);
+            this.ClientSize = new System.Drawing.Size(800, 451);
             this.Controls.Add(this.SubmitButton1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -189,11 +185,10 @@ namespace signuo
             this.Controls.Add(this.ConfirmPasswordTextbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PasswordTextBox);
+            this.Controls.Add(this.UserNameTextBox);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -205,8 +200,8 @@ namespace signuo
         #endregion
 
         private System.Windows.Forms.Button SubmitButton1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox UserNameTextBox;
+        private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
