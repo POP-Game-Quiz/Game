@@ -29,8 +29,9 @@ namespace signuo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.QuestionLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.NextBtn = new System.Windows.Forms.Button();
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,6 +41,8 @@ namespace signuo
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.TimerLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,25 +55,25 @@ namespace signuo
             this.QuestionLabel.Text = "Question";
             this.QuestionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // SubmitButton
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(541, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 107);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.SubmitBt);
+            this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SubmitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SubmitButton.Location = new System.Drawing.Point(316, 231);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(119, 90);
+            this.SubmitButton.TabIndex = 5;
+            this.SubmitButton.Text = "submit";
+            this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitBt);
             // 
             // NextBtn
             // 
             this.NextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.NextBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NextBtn.Location = new System.Drawing.Point(667, 304);
+            this.NextBtn.Location = new System.Drawing.Point(316, 336);
             this.NextBtn.Name = "NextBtn";
-            this.NextBtn.Size = new System.Drawing.Size(101, 107);
+            this.NextBtn.Size = new System.Drawing.Size(119, 88);
             this.NextBtn.TabIndex = 6;
             this.NextBtn.Text = "Next";
             this.NextBtn.UseVisualStyleBackColor = true;
@@ -123,7 +126,7 @@ namespace signuo
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(260, 224);
+            this.radioButton1.Location = new System.Drawing.Point(49, 231);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(179, 35);
             this.radioButton1.TabIndex = 15;
@@ -135,7 +138,7 @@ namespace signuo
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(260, 278);
+            this.radioButton2.Location = new System.Drawing.Point(49, 286);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(179, 35);
             this.radioButton2.TabIndex = 16;
@@ -147,7 +150,7 @@ namespace signuo
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(260, 319);
+            this.radioButton3.Location = new System.Drawing.Point(49, 336);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(179, 35);
             this.radioButton3.TabIndex = 17;
@@ -159,7 +162,7 @@ namespace signuo
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton4.Location = new System.Drawing.Point(260, 376);
+            this.radioButton4.Location = new System.Drawing.Point(49, 389);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(179, 35);
             this.radioButton4.TabIndex = 18;
@@ -167,13 +170,30 @@ namespace signuo
             this.radioButton4.Text = "radioButton4";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // TimerLabel
+            // 
+            this.TimerLabel.AutoSize = true;
+            this.TimerLabel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerLabel.Location = new System.Drawing.Point(556, 286);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(141, 35);
+            this.TimerLabel.TabIndex = 19;
+            this.TimerLabel.Text = "20 Seconds";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Quiz
             // 
-            this.AcceptButton = this.button1;
+            this.AcceptButton = this.SubmitButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(115)))), ((int)(((byte)(216)))));
             this.ClientSize = new System.Drawing.Size(800, 451);
+            this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -182,7 +202,7 @@ namespace signuo
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.NextBtn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.QuestionLabel);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -197,7 +217,7 @@ namespace signuo
 
         #endregion
         private System.Windows.Forms.Label QuestionLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button NextBtn;
         private System.Windows.Forms.Label ScoreLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -207,5 +227,7 @@ namespace signuo
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Label TimerLabel;
+        private System.Windows.Forms.Timer timer1;
     }
 }

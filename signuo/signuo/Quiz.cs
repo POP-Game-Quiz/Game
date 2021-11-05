@@ -161,7 +161,22 @@ namespace signuo
                 conn.Close();
             }
         }
-
-       
+        int timeLeft = 20;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (timeLeft>0)
+            {
+                TimerLabel.Text = timeLeft + " Seconds";
+                timeLeft = timeLeft - 1;
+                SubmitButton.Enabled = true;
+                NextBtn.Enabled = false;
+            }
+            else
+            {
+                TimerLabel.Text = "Sorry, you run out of time!";
+                SubmitButton.Enabled = false;
+                NextBtn.Enabled=true;
+            }
+        }
     }
 }
