@@ -38,10 +38,10 @@ namespace signuo
             this.ConfirmPasswordTextbox = new System.Windows.Forms.TextBox();
             this.ConfirmPasswordLabel = new System.Windows.Forms.Label();
             this.SignUpButton = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,19 +130,6 @@ namespace signuo
             this.SignUpButton.UseVisualStyleBackColor = true;
             this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.InfoText;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox3.Location = new System.Drawing.Point(33, 37);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(734, 87);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.Text = "IT\'S QUIZ TIME!!";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -174,6 +161,17 @@ namespace signuo
             this.label4.Text = "Click \'Sign Up\' below";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(65, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(685, 97);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "IT\'S QUIZ TIME!!";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            
+            // 
             // Login
             // 
             this.AcceptButton = this.button2;
@@ -181,6 +179,7 @@ namespace signuo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 451);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.SubmitButton1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -192,7 +191,6 @@ namespace signuo
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.UserNameTextBox);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
@@ -214,10 +212,10 @@ namespace signuo
         public System.Windows.Forms.TextBox ConfirmPasswordTextbox;
         public System.Windows.Forms.Label ConfirmPasswordLabel;
         private System.Windows.Forms.Button SignUpButton;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
