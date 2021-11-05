@@ -454,20 +454,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bestk\\.nuget\\packages\\": {}
+    "C:\\Users\\ciuca\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bestk\\source\\Game-main\\Game-main\\signuo\\signuo\\signuo.csproj",
+      "projectUniqueName": "C:\\Users\\ciuca\\Source\\Repos\\Game\\signuo\\signuo\\signuo.csproj",
       "projectName": "signuo",
-      "projectPath": "C:\\Users\\bestk\\source\\Game-main\\Game-main\\signuo\\signuo\\signuo.csproj",
-      "packagesPath": "C:\\Users\\bestk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bestk\\source\\Game-main\\Game-main\\signuo\\signuo\\obj\\",
+      "projectPath": "C:\\Users\\ciuca\\Source\\Repos\\Game\\signuo\\signuo\\signuo.csproj",
+      "packagesPath": "C:\\Users\\ciuca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ciuca\\Source\\Repos\\Game\\signuo\\signuo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\bestk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\ciuca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows7.0"

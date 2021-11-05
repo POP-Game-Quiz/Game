@@ -9,9 +9,9 @@ namespace signuo
     {
         //sql connection
         //if the conn string dosent work 
-        // to find this, double click database1 and in the properies of the database copy conn string, paste it into the variable 
+        //  to find this, double click database1 and in the properies of the database copy conn string, paste it into the variable 
         public static SqlConnection conn = new SqlConnection
-        (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
+        (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\source\repos\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
 
         public static string User;
         public Login()
@@ -28,6 +28,8 @@ namespace signuo
             ConfirmPasswordTextbox.Show();
             SubmitButton1.Show();
             SignUpButton.Hide();
+            label3.Hide();
+            label4.Hide();
         }
         private void Submit(object sender, EventArgs e)
         {

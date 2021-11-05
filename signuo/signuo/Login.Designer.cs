@@ -48,9 +48,9 @@ namespace signuo
             // SubmitButton1
             // 
             this.SubmitButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SubmitButton1.Location = new System.Drawing.Point(379, 311);
+            this.SubmitButton1.Location = new System.Drawing.Point(357, 369);
             this.SubmitButton1.Name = "SubmitButton1";
-            this.SubmitButton1.Size = new System.Drawing.Size(94, 43);
+            this.SubmitButton1.Size = new System.Drawing.Size(134, 43);
             this.SubmitButton1.TabIndex = 0;
             this.SubmitButton1.Text = "Submit";
             this.SubmitButton1.UseVisualStyleBackColor = true;
@@ -75,9 +75,9 @@ namespace signuo
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(379, 233);
+            this.button2.Location = new System.Drawing.Point(184, 369);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 37);
+            this.button2.Size = new System.Drawing.Size(134, 45);
             this.button2.TabIndex = 3;
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = true;
@@ -122,7 +122,7 @@ namespace signuo
             // 
             this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SignUpButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SignUpButton.Location = new System.Drawing.Point(361, 371);
+            this.SignUpButton.Location = new System.Drawing.Point(512, 369);
             this.SignUpButton.Name = "SignUpButton";
             this.SignUpButton.Size = new System.Drawing.Size(134, 43);
             this.SignUpButton.TabIndex = 8;
@@ -173,6 +173,7 @@ namespace signuo
             // 
             // Login
             // 
+            this.AcceptButton = this.button2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 451);
@@ -189,6 +190,7 @@ namespace signuo
             this.Controls.Add(this.UserNameTextBox);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

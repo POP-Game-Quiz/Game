@@ -48,3 +48,4 @@ C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.d
 C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\ref\signuo.dll
 C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.pdb
 C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.genruntimeconfig.cache
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.Properties.Resources.resources

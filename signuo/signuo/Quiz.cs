@@ -9,43 +9,44 @@ namespace signuo
     public partial class Quiz : Form
     {
         private int j = 1;
-        //  private int scoree;
+        
         private string userAnswer;
         private string correctAnswer;
 
-        private static List<AnswerButton> AnswerBtn = new List<AnswerButton>();
+        private static List<Button> BtnList = new List<Button>();
 
         public Quiz()
         {
             InitializeComponent();
             //initializes the first question straight away
 
-            AnswerBtn = new List<AnswerButton>()
+            BtnList = new List<Button>()
                         {
-                            answerButton1,
-                            answerButton2,
-                            answerButton3,
-                            answerButton4
+                            AnswerButton1,
+                            AnswerButton2,
+                            AnswerButton3,
+                            AnswerButton4
                         };
             //bring up the first question
             QuizzFill(j);
             //initial display the score to label from database
             GetScore();
-
+           
         }
 
         private void SubmitBt(object sender, EventArgs e)
         {
 
-            foreach (AnswerButton aBtn in AnswerBtn)
+            foreach (Button aBtn in BtnList)
             {
-                if (aBtn.Checked)
+                if (aBtn.Enabled)
                 {
-                    //sets userAnswer to the selected radiobutton
+                    //sets userAnswer to the selected button
                     userAnswer = aBtn.Text;
                     break;
                 }
             };
+
 
             if (userAnswer == correctAnswer)
             {
@@ -72,9 +73,9 @@ namespace signuo
             QuizzFill(j);
         }
 
-        private void QuizzFill(int i )
+        private void QuizzFill(int i)
         {
-            
+            //selects the row 
             SqlCommand cmd = new SqlCommand(@"select top(" + i + ")* from [dbo].[Quest];", conn);
             try
             {
@@ -84,26 +85,34 @@ namespace signuo
                 {
                     while (read.Read())
                     {
-                       
-                        label1.Text = (read["question"].ToString());
 
-                        string first  = (read["cAnswer"].ToString());
-                        string second  = (read["wAnswer"].ToString());
-                        string third = (read["wrAnswer"].ToString());
-                        string fourth = (read["wroAnswer"].ToString());
+                        QuestionLabel.Text = (read["question"].ToString());
 
-                        List<string> populateAns = new List<string>()
-                                                           { first,
-                                                             second,
-                                                             third,
-                                                             fourth
-                                                           };
-                        int hh = new Random().Next(populateAns.Count);
+                        string correctAns = (read["cAnswer"].ToString());
+                        string wrongA = (read["wAnswer"].ToString());
+                        string wrongAn = (read["wrAnswer"].ToString());
+                        string wrongAns = (read["wroAnswer"].ToString());
 
-                        AnswerButton1.Text = populateAns[hh];
-                        AnswerButton2.Text = populateAns[hh];
-                        AnswerButton3.Text = populateAns[hh];
-                        AnswerButton4.Text = populateAns[hh];
+                        //sets my correct answer to a global variable 
+                        correctAnswer = correctAns;
+
+                        List<string> answerList = new List<string>()
+                                                        {  correctAns,
+                                                           wrongA,
+                                                           wrongAn,
+                                                           wrongAns
+                                                        };
+
+                        foreach (Button Btn in BtnList)
+                        {
+
+                            string currentAnswer = answerList[new Random().Next(answerList.Count)];
+
+                            //sets the radiobutton with the random answer
+                            //then removes that answer from the  answer list 
+                            Btn.Text = currentAnswer;
+                            answerList.RemoveAt(answerList.IndexOf(currentAnswer));
+                        }
                     }
                 }
             }
@@ -145,5 +154,9 @@ namespace signuo
             }
         }
 
+        public void Btn()
+        {
+
+        }
     }
 }
