@@ -12,37 +12,43 @@ namespace signuo
         
         private string userAnswer;
         private string correctAnswer;
+     
 
-        private static List<Button> BtnList = new List<Button>();
+        private static List<RadioButton> BtnList = new List<RadioButton>();
 
         public Quiz()
         {
             InitializeComponent();
             //initializes the first question straight away
 
-            BtnList = new List<Button>()
+
+            BtnList = new List<RadioButton>()
                         {
-                            AnswerButton1,
-                            AnswerButton2,
-                            AnswerButton3,
-                            AnswerButton4
+                radioButton1,
+                radioButton2,
+                radioButton3,
+                radioButton4          
                         };
             //bring up the first question
             QuizzFill(j);
             //initial display the score to label from database
             GetScore();
-           
+           // BtnList.Ele.Appearance = Appearance.Button;
+
+
         }
 
         private void SubmitBt(object sender, EventArgs e)
         {
+           
 
-            foreach (Button aBtn in BtnList)
+            foreach (RadioButton aBtn in BtnList)
             {
-                if (aBtn.Enabled)
+                if (aBtn.Checked)
                 {
                     //sets userAnswer to the selected button
                     userAnswer = aBtn.Text;
+                    
                     break;
                 }
             };
@@ -60,9 +66,11 @@ namespace signuo
             else
             {
                 MessageBox.Show("Incorrect Answer");
+               
             }
             //display the score to the label from database
             GetScore();
+            
         }
 
         private void NextButton(object sender, EventArgs e)
@@ -103,7 +111,7 @@ namespace signuo
                                                            wrongAns
                                                         };
 
-                        foreach (Button Btn in BtnList)
+                        foreach (RadioButton Btn in BtnList)
                         {
 
                             string currentAnswer = answerList[new Random().Next(answerList.Count)];
@@ -154,9 +162,6 @@ namespace signuo
             }
         }
 
-        public void Btn()
-        {
-
-        }
+       
     }
 }

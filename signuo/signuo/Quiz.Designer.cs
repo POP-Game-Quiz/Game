@@ -33,13 +33,13 @@ namespace signuo
             this.button1 = new System.Windows.Forms.Button();
             this.NextBtn = new System.Windows.Forms.Button();
             this.ScoreLabel = new System.Windows.Forms.Label();
-            this.AnswerButton1 = new System.Windows.Forms.Button();
-            this.AnswerButton2 = new System.Windows.Forms.Button();
-            this.AnswerButton3 = new System.Windows.Forms.Button();
-            this.AnswerButton4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,61 +78,18 @@ namespace signuo
             // 
             // ScoreLabel
             // 
-            this.ScoreLabel.Location = new System.Drawing.Point(666, 170);
+            this.ScoreLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ScoreLabel.Location = new System.Drawing.Point(667, 153);
             this.ScoreLabel.Name = "ScoreLabel";
             this.ScoreLabel.Size = new System.Drawing.Size(101, 38);
             this.ScoreLabel.TabIndex = 7;
             this.ScoreLabel.Text = "score";
             this.ScoreLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // AnswerButton1
-            // 
-            this.AnswerButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AnswerButton1.Location = new System.Drawing.Point(33, 304);
-            this.AnswerButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.AnswerButton1.Name = "AnswerButton1";
-            this.AnswerButton1.Size = new System.Drawing.Size(120, 107);
-            this.AnswerButton1.TabIndex = 8;
-            this.AnswerButton1.Text = "Answer1";
-            this.AnswerButton1.UseVisualStyleBackColor = true;
-            // 
-            // AnswerButton2
-            // 
-            this.AnswerButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AnswerButton2.Location = new System.Drawing.Point(160, 304);
-            this.AnswerButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.AnswerButton2.Name = "AnswerButton2";
-            this.AnswerButton2.Size = new System.Drawing.Size(120, 107);
-            this.AnswerButton2.TabIndex = 9;
-            this.AnswerButton2.Text = "Answer2";
-            this.AnswerButton2.UseVisualStyleBackColor = true;
-            // 
-            // AnswerButton3
-            // 
-            this.AnswerButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AnswerButton3.Location = new System.Drawing.Point(287, 304);
-            this.AnswerButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.AnswerButton3.Name = "AnswerButton3";
-            this.AnswerButton3.Size = new System.Drawing.Size(120, 107);
-            this.AnswerButton3.TabIndex = 10;
-            this.AnswerButton3.Text = "Answer3";
-            this.AnswerButton3.UseVisualStyleBackColor = true;
-            // 
-            // AnswerButton4
-            // 
-            this.AnswerButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AnswerButton4.Location = new System.Drawing.Point(414, 304);
-            this.AnswerButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.AnswerButton4.Name = "AnswerButton4";
-            this.AnswerButton4.Size = new System.Drawing.Size(120, 107);
-            this.AnswerButton4.TabIndex = 11;
-            this.AnswerButton4.Text = "Answer4";
-            this.AnswerButton4.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(50)))), ((int)(((byte)(133)))));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 19);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(773, 419);
@@ -156,11 +113,59 @@ namespace signuo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(688, 145);
+            this.label1.Location = new System.Drawing.Point(688, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 25);
             this.label1.TabIndex = 14;
             this.label1.Text = "Score";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radioButton1.Location = new System.Drawing.Point(260, 224);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(179, 35);
+            this.radioButton1.TabIndex = 15;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radioButton2.Location = new System.Drawing.Point(260, 278);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(179, 35);
+            this.radioButton2.TabIndex = 16;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radioButton3.Location = new System.Drawing.Point(260, 319);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(179, 35);
+            this.radioButton3.TabIndex = 17;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.radioButton4.Location = new System.Drawing.Point(260, 376);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(179, 35);
+            this.radioButton4.TabIndex = 18;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // Quiz
             // 
@@ -169,12 +174,12 @@ namespace signuo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(115)))), ((int)(((byte)(216)))));
             this.ClientSize = new System.Drawing.Size(800, 451);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.AnswerButton4);
-            this.Controls.Add(this.AnswerButton3);
-            this.Controls.Add(this.AnswerButton2);
-            this.Controls.Add(this.AnswerButton1);
             this.Controls.Add(this.ScoreLabel);
             this.Controls.Add(this.NextBtn);
             this.Controls.Add(this.button1);
@@ -195,12 +200,12 @@ namespace signuo
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button NextBtn;
         private System.Windows.Forms.Label ScoreLabel;
-        private System.Windows.Forms.Button AnswerButton1;
-        private System.Windows.Forms.Button AnswerButton2;
-        private System.Windows.Forms.Button AnswerButton3;
-        private System.Windows.Forms.Button AnswerButton4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
     }
 }
