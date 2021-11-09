@@ -1,0 +1,77 @@
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\signuo.exe
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\signuo.deps.json
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\signuo.runtimeconfig.json
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\signuo.runtimeconfig.dev.json
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\signuo.dll
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\ref\signuo.dll
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\signuo.pdb
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ciuca\source\repos\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.AssemblyReference.cache
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.GenerateResource.cache
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.AssemblyInfoInputs.cache
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.AssemblyInfo.cs
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.CoreCompileInputs.cache
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.dll
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\ref\signuo.dll
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.pdb
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.genruntimeconfig.cache
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.Login.resources
+C:\Users\ciuca\source\repos\signuo\signuo\obj\Debug\net5.0-windows\signuo.Quiz.resources
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.exe
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.deps.json
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.runtimeconfig.json
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.runtimeconfig.dev.json
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\ref\signuo.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.pdb
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.AssemblyReference.cache
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.Login.resources
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.Quiz.resources
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.GenerateResource.cache
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.AssemblyInfoInputs.cache
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.AssemblyInfo.cs
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.CoreCompileInputs.cache
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\ref\signuo.dll
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.pdb
+C:\Users\ciuca\Source\Repos\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.genruntimeconfig.cache
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.exe
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.deps.json
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.runtimeconfig.json
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.runtimeconfig.dev.json
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\ref\signuo.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.pdb
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.Quiz.resources
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.GenerateResource.cache
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.AssemblyInfoInputs.cache
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.AssemblyInfo.cs
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.CoreCompileInputs.cache
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\ref\signuo.dll
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.pdb
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.genruntimeconfig.cache
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.csproj.AssemblyReference.cache
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\bin\Debug\net5.0-windows\signuo.dll.config
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.LogForm.resources
+C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\obj\Debug\net5.0-windows\signuo.Properties.Resources.resources
