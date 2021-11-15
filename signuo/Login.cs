@@ -13,7 +13,7 @@ namespace signuo
         //if the conn string dosent work 
         // to find this, double click database1 and in the properies of the database copy conn string, paste it into the variable 
         public static SqlConnection conn = new SqlConnection
-        (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ciuca\OneDrive\year 2\Software Eng\Game\signuo\signuo\Database1.mdf;Integrated Security=True");
+        (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Temp\Game\signuo\Database1.mdf;Integrated Security=True");
 
         public static string User;
          public LogForm()
@@ -57,7 +57,7 @@ namespace signuo
         private void LoginButton(object sender, EventArgs e)
         {
   
-            SqlDataAdapter adap = new SqlDataAdapter(@"select count (*) from [dbo].[signup] where [dbo].[signup].[user] ='" + UserNameTextBox.Text + "' and [dbo].[signup].[pass] ='" + PasswordTextBox.Text + "'", conn);
+            SqlDataAdapter adap = new SqlDataAdapter(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Temp\Game\signuo\Database1.mdf;Integrated Security=True" + "'", conn);
 
             //creates table and adds data
             DataTable dt = new DataTable();

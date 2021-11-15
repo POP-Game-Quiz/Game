@@ -59,5 +59,46 @@ namespace signuo.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap golden_spiral_fun_vector_blue_260nw_1935577633 {
+            get {
+                object obj = ResourceManager.GetObject("golden-spiral-fun-vector-blue-260nw-1935577633", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ri573fci_400x400 {
+            get {
+                object obj = ResourceManager.GetObject("ri573fci_400x400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sticker_35mm_bronzeaward__1_ {
+            get {
+                object obj = ResourceManager.GetObject("sticker-35mm_bronzeaward (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trend_enterprises_inc_32_gold_embossed_congratulations_certificate_award_seals_stickers__29180_1603888933 {
+            get {
+                object obj = ResourceManager.GetObject("trend-enterprises-inc-32-gold-embossed-congratulations-certificate-award-seals-st" +
+                        "ickers__29180.1603888933", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

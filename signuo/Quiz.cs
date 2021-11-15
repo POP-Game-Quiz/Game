@@ -11,7 +11,7 @@ namespace signuo
     {
         private int j = 1;
         private int Tick = 20;
-      
+       public static int userScore;
         private string userAnswer;
         private string correctAnswer;
 
@@ -66,6 +66,8 @@ namespace signuo
                 //increments score by 1 
                 // updates old score + new score every "submit" click
                 Score();
+               
+                
             }
             else
             {
@@ -74,7 +76,15 @@ namespace signuo
             //display the score to the label from database
             GetScore();
             SubmitBtnn.Hide();
+
+            if (userScore==10 || userScore==20 || userScore== 30)
+            {
+                BadgesForm badgesForm = new BadgesForm();
+                badgesForm.Show();
+            }
         }
+
+     
 
         private void NextButton(object sender, EventArgs e)
         {
@@ -151,8 +161,9 @@ namespace signuo
             cmdScore.ExecuteNonQuery();
             conn.Close();
         }
-        private void GetScore()
+        private void  GetScore()
         {
+             
             SqlCommand cmd = new SqlCommand(@"select (score) from [dbo].[signup] where  [dbo].[signup].[user] in (@usr)" , conn);
             cmd.Parameters.AddWithValue("@usr", User);
             try
@@ -163,13 +174,16 @@ namespace signuo
                     while (read.Read())
                     {
                         ScoreLabel.Text = (read["score"].ToString());
+                        userScore = Convert.ToInt32(ScoreLabel.Text);
                     }
                 }
+               
             }
             finally
             {
                 conn.Close();
             }
+            
         }
 
 
