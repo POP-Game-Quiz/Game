@@ -49,6 +49,7 @@ namespace signuo
             this.timeDisplay = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.FeedbackLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ColorSwich)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,7 +59,7 @@ namespace signuo
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(175, 175);
+            this.radioButton1.Location = new System.Drawing.Point(175, 199);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(117, 24);
@@ -81,7 +82,7 @@ namespace signuo
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(506, 175);
+            this.radioButton3.Location = new System.Drawing.Point(506, 199);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(117, 24);
             this.radioButton3.TabIndex = 2;
@@ -103,7 +104,7 @@ namespace signuo
             // QuestionLabel
             // 
             this.QuestionLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.QuestionLabel.Location = new System.Drawing.Point(150, 95);
+            this.QuestionLabel.Location = new System.Drawing.Point(146, 119);
             this.QuestionLabel.Name = "QuestionLabel";
             this.QuestionLabel.Size = new System.Drawing.Size(574, 74);
             this.QuestionLabel.TabIndex = 4;
@@ -167,6 +168,7 @@ namespace signuo
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -244,6 +246,16 @@ namespace signuo
             this.FeedbackLabel.Size = new System.Drawing.Size(0, 20);
             this.FeedbackLabel.TabIndex = 13;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 193);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "end";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -296,5 +308,6 @@ namespace signuo
         private System.Windows.Forms.Label ScoreDisplay;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label FeedbackLabel;
+        private System.Windows.Forms.Button button1;
     }
 }

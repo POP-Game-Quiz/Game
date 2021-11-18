@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using static signuo.LogForm;
+using System.Threading.Tasks;
 
 
 namespace signuo
@@ -81,6 +82,8 @@ namespace signuo
             {
                 BadgesForm badgesForm = new BadgesForm();
                 badgesForm.Show();
+               
+                
             }
         }
 
@@ -181,6 +184,7 @@ namespace signuo
                 }
                
             }
+          
             finally
             {
                 conn.Close();
@@ -203,7 +207,6 @@ namespace signuo
 
                 ExitBtn.Location = new System.Drawing.Point(650, 10);
                 ExitBtn.Size = new System.Drawing.Size(94, 94);
-                // a button where it takes you to rank form
             }
         }
 
@@ -211,7 +214,7 @@ namespace signuo
         {
             if (ColorSwich.Value == 1)
             {
-                this.BackColor = System.Drawing.Color.FromArgb(192, 255, 192);
+                this.BackColor = System.Drawing.Color.Aqua;
                 this.ForeColor = System.Drawing.Color.FromArgb(41, 52, 73);
             }
             else
@@ -226,27 +229,26 @@ namespace signuo
             if (i == 30)
             {
                 MessageBox.Show("chill you ended the game");
-                
+                this.Close();
                 //this.Hide(); //hides this form
-                Ranks RankForm = new Ranks();
-                RankForm.Show();
-
-                //shows the form you will create with scores and stuff
-
-
+                // add here end screen.show(); //shows the form you will create with scores and stuff 
 
                 //
-                // simmilar to what i did with login and quiz form
-
-
+                // simmilar to what i did with login and quiz form 
 
             }
         }
+
         private void Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ranky rr = new Ranky();
+            rr.Show();
+            this.Hide();
+        }
     }
 }

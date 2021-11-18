@@ -2,19 +2,15 @@
 using System.Data;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.IO;
 
 namespace signuo
 {
     public partial class LogForm : Form
     {
-     
-        //sql connection
-        //if the conn string dosent work 
-        // to find this, double click database1 and in the properies of the database copy conn string, paste it into the variable 
-        public static SqlConnection conn = new SqlConnection
-        (@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\bestk\Documents\University\CCCU\Year 2\Software Engineering\Game-main\Game-main\signuo\Database1.mdf;Integrated Security = True");
-
+        string dir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName;
+        public static SqlConnection conn;  
+        
         public static string User;
          public LogForm()
         {
@@ -22,6 +18,7 @@ namespace signuo
             ConfirmPasswordLabel.Hide();
             ConfirmPasswordTextbox.Hide();
             SubmitButton1.Hide();
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + dir + @"\signuo\Database1.mdf;Integrated Security=True");
         }
         private void SignUpButton_Click(object sender, EventArgs e)
         {
@@ -56,12 +53,14 @@ namespace signuo
         }
         private void LoginButton(object sender, EventArgs e)
         {
+            conn.Close();
 
             SqlDataAdapter adap = new SqlDataAdapter(@"select count (*) from [dbo].[signup] where [dbo].[signup].[user] ='" + UserNameTextBox.Text + "' and [dbo].[signup].[pass] ='" + PasswordTextBox.Text + "'", conn);
+           
             //creates table and adds data
             DataTable dt = new DataTable();
             adap.Fill(dt);
-          
+            
             if (dt.Rows[0][0].ToString() == "1" )
             {
                 //fills global variable with username
@@ -78,6 +77,7 @@ namespace signuo
             {
                 LabelFeedback.Text = "Account does not exist!";
             }
+         
         }
 
 
@@ -85,7 +85,7 @@ namespace signuo
         {
             if (ColorSwich.Value == 1)
             {
-                this.BackColor = System.Drawing.Color.FromArgb(192, 255, 192);
+                this.BackColor = System.Drawing.Color.Aqua;
                 this.ForeColor = System.Drawing.Color.FromArgb(41, 52, 73);
                 
             }

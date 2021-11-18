@@ -10,7 +10,7 @@
     <Compile Update="Quiz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Ranks.cs">
+    <Compile Update="Ranky.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

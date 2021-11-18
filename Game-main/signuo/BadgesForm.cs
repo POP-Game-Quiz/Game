@@ -22,22 +22,22 @@ namespace signuo
                 case 10:
                     //shows the quizz app/window
                     //Quiz BadgesForm = new Quiz();
-                    this.Show();
+                    
                     CongratsMessage.Text = "Congrats you have earned a bronze award!";
                     pictureBoxBronze.Visible = true;
                     pictureBoxSilver.Visible = false;
                     pictureBoxGold.Visible = false;
-                    Task.Delay(4000);
+                    Task.Delay(1000);
                     this.Hide();
+
                     break;
                 case 20:
-                    this.Show();
+                    
                     CongratsMessage.Text = "Congrats you have earned a silver award!";
                     pictureBoxBronze.Visible = false;
                     pictureBoxSilver.Visible = true;
                     pictureBoxGold.Visible = false;
-                    Task.Delay(4000);
-                    this.Hide();
+                 
                     break;
                 case 30:
                     this.Show();
@@ -45,11 +45,11 @@ namespace signuo
                     pictureBoxBronze.Visible = false;
                     pictureBoxSilver.Visible = false;
                     pictureBoxGold.Visible = true;
-                    Task.Delay(4000);
-                    this.Hide();
+                   
                     break;
 
             }
+            
         }
     }
 }
