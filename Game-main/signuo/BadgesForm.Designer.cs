@@ -35,6 +35,7 @@ namespace signuo
             this.pictureBoxBronze = new System.Windows.Forms.PictureBox();
             this.pictureBoxSilver = new System.Windows.Forms.PictureBox();
             this.pictureBoxGold = new System.Windows.Forms.PictureBox();
+            this.ExitBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBronze)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSilver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGold)).BeginInit();
@@ -98,12 +99,25 @@ namespace signuo
             this.pictureBoxGold.TabIndex = 4;
             this.pictureBoxGold.TabStop = false;
             // 
+            // ExitBtn
+            // 
+            this.ExitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitBtn.BackgroundImage")));
+            this.ExitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ExitBtn.Location = new System.Drawing.Point(878, 12);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(32, 31);
+            this.ExitBtn.TabIndex = 14;
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
             // BadgesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(922, 559);
+            this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.pictureBoxGold);
             this.Controls.Add(this.pictureBoxSilver);
             this.Controls.Add(this.pictureBoxBronze);
@@ -127,5 +141,6 @@ namespace signuo
         private System.Windows.Forms.PictureBox pictureBoxBronze;
         private System.Windows.Forms.PictureBox pictureBoxSilver;
         private System.Windows.Forms.PictureBox pictureBoxGold;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }

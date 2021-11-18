@@ -38,12 +38,16 @@ namespace signuo
             //initial display of the score to label, from database
             GetScore();
 
-            
-            /*foreach (RadioButton aBtn in radioBtn)
+
+            foreach (RadioButton aBtn in radioBtn)
             {
-                //gotta make this button flatStyle.popup somehow
-                aBtn.Appearance= Appearance.Button; 
-            }*/
+
+                aBtn.Appearance = Appearance.Button;
+                if (userAnswer == correctAnswer)
+                {
+                    aBtn.BackColor = System.Drawing.Color.Green;
+                }
+            }
         }
         private void SubmitBt(object sender, EventArgs e)
         {
@@ -94,7 +98,7 @@ namespace signuo
             Tick = 20;
             timer1.Start();
             timerLabel.Text = Tick + " Seconds";
-
+            FeedbackLabel.Text = " ";
             
 
             //increments j where j is the row number of the table 
@@ -229,13 +233,10 @@ namespace signuo
             if (i == 30)
             {
                 MessageBox.Show("chill you ended the game");
-                this.Close();
-                //this.Hide(); //hides this form
-                // add here end screen.show(); //shows the form you will create with scores and stuff 
-
-                //
-                // simmilar to what i did with login and quiz form 
-
+                Ranky rr = new Ranky();
+                rr.Show();
+                this.Hide();
+            
             }
         }
 

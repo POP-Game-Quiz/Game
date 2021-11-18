@@ -42,6 +42,7 @@ namespace signuo
             this.ExitBtn = new System.Windows.Forms.Button();
             this.ColorSwich = new System.Windows.Forms.TrackBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.timerLabel = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@ namespace signuo
             this.timeDisplay = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.FeedbackLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ColorSwich)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,10 +59,11 @@ namespace signuo
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.radioButton1.Location = new System.Drawing.Point(175, 199);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(117, 24);
+            this.radioButton1.Size = new System.Drawing.Size(116, 24);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
@@ -71,9 +72,10 @@ namespace signuo
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.radioButton2.Location = new System.Drawing.Point(175, 258);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(117, 24);
+            this.radioButton2.Size = new System.Drawing.Size(116, 24);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "radioButton2";
@@ -82,9 +84,10 @@ namespace signuo
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
+            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.radioButton3.Location = new System.Drawing.Point(506, 199);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(117, 24);
+            this.radioButton3.Size = new System.Drawing.Size(116, 24);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "radioButton3";
@@ -93,9 +96,10 @@ namespace signuo
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
+            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.radioButton4.Location = new System.Drawing.Point(506, 258);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(117, 24);
+            this.radioButton4.Size = new System.Drawing.Size(116, 24);
             this.radioButton4.TabIndex = 3;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "radioButton4";
@@ -175,6 +179,17 @@ namespace signuo
             this.panel1.Size = new System.Drawing.Size(121, 450);
             this.panel1.TabIndex = 11;
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(12, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "End/Rank";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = null;
@@ -245,16 +260,6 @@ namespace signuo
             this.FeedbackLabel.Name = "FeedbackLabel";
             this.FeedbackLabel.Size = new System.Drawing.Size(0, 20);
             this.FeedbackLabel.TabIndex = 13;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(13, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "end";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Quiz
             // 

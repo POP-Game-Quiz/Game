@@ -16,6 +16,7 @@ C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.Badges
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.LogForm.resources
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.Properties.Resources.resources
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.Quiz.resources
+C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.Ranky.resources
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.csproj.GenerateResource.cache
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.AssemblyInfoInputs.cache
@@ -26,4 +27,3 @@ C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\ref\signuo.dl
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.pdb
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.genruntimeconfig.cache
 C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.csproj.AssemblyReference.cache
-C:\Users\ciuca\Downloads\Game-main\signuo\obj\Debug\net5.0-windows\signuo.Ranky.resources

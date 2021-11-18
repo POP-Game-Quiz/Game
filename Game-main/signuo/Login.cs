@@ -18,6 +18,7 @@ namespace signuo
             ConfirmPasswordLabel.Hide();
             ConfirmPasswordTextbox.Hide();
             SubmitButton1.Hide();
+            
             conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + dir + @"\signuo\Database1.mdf;Integrated Security=True");
         }
         private void SignUpButton_Click(object sender, EventArgs e)
@@ -53,7 +54,7 @@ namespace signuo
         }
         private void LoginButton(object sender, EventArgs e)
         {
-            conn.Close();
+            
 
             SqlDataAdapter adap = new SqlDataAdapter(@"select count (*) from [dbo].[signup] where [dbo].[signup].[user] ='" + UserNameTextBox.Text + "' and [dbo].[signup].[pass] ='" + PasswordTextBox.Text + "'", conn);
            
